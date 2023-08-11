@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.springboot.web.SpringbootprojectApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 15.833 s <<< FAILURE! - in com.springboot.web.SpringbootprojectApplicationTests
+contextLoads  Time elapsed: 0.029 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'connectionFactory' defined in class path resource [org/springframework/boot/autoconfigure/r2dbc/ConnectionFactoryConfigurations$PoolConfiguration$PooledConnectionFactoryConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.r2dbc.pool.ConnectionPool]: Factory method 'connectionFactory' threw exception; nested exception is org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryOptionsInitializer$ConnectionFactoryBeanCreationException: Failed to determine a suitable R2DBC Connection URL
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.r2dbc.pool.ConnectionPool]: Factory method 'connectionFactory' threw exception; nested exception is org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryOptionsInitializer$ConnectionFactoryBeanCreationException: Failed to determine a suitable R2DBC Connection URL
+Caused by: org.springframework.boot.autoconfigure.r2dbc.ConnectionFactoryOptionsInitializer$ConnectionFactoryBeanCreationException: Failed to determine a suitable R2DBC Connection URL
+
